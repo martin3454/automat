@@ -349,7 +349,7 @@ int has(char *key){
     hashod = *key + 31*hashod;
   return hashod % N;*/
   
-  long hashod = (key[0] * 100) + (key[1] * 10) + key[2];
+  int hashod = (key[0] * 100) + (key[1] * 10) + key[2];
   return hashod % 10;
 }
 
